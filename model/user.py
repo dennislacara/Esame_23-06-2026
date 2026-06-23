@@ -9,6 +9,7 @@ class User:
     name : str
     average_stars : float
     review_count : int
+    n_bus_reviewed : int = 0
 
     def __str__(self):
         return f"{self.name} ({self.user_id})"
@@ -18,3 +19,6 @@ class User:
 
     def __hash__(self):
         return hash(self.user_id)
+
+    def __repr__(self):
+        return self.__str__()

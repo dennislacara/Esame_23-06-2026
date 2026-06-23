@@ -69,7 +69,8 @@ class View:
 
         self._btnSequenza = ft.ElevatedButton(
             text="Cerca Sequenza",
-            disabled=True
+            disabled=True,
+            on_click=self._controller.handler_sequenza
         )
 
         row2 = ft.Row(
